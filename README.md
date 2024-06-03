@@ -61,6 +61,10 @@ pip install -r requirements.txt
 ```
 python app.py 
 ```
+- Render hosted URL 
+```
+https://pushup-count.onrender.com
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
