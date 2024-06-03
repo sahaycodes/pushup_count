@@ -2,8 +2,13 @@ import cv2
 import numpy as np
 import mediapipe as mp
 from flask import Flask, render_template, Response
+from cam_check import check_camera #import other cam_checker code to check for camera
 
 app = Flask(__name__)
+
+# Check camera before starting the video feed
+if not check_camera():
+    print("Camera issues detected. Please check the camera connection, index, and permissions.")
 
 def calculate_angle(a, b, c):
     a = np.array(a)
