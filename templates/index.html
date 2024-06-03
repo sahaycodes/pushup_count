@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Push-Up Counter using Python</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            //checking for camera permission
+            navigator.mediaDevices.getUserMedia({video:true})
+                .then(function(stream){
+                    //granted cam access
+                    document.getElementById('camera-status').innerText='Camera access on';
+                    stream.getTracks().forEach(track => track.stop());
+                })
+                .catch(function(err){
+                    document.getElementById('camera-status').innerText='Camera acces denied';
+                });
+        });
+    </script>
 </head>
 <body>
     <h1>Push-Up Counter using Python</h1>
 
     <div>
         <img src="{{url_for('video_feed')}}" width="640" height="480">
+    </div>
+    <div>
+        <div id="camera-status"></div>
     </div>
     <footer>
         Created by Shreya Sahay
