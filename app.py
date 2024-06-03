@@ -18,12 +18,16 @@ def calculate_angle(a, b, c):
         
     return angle
 
+
 def gen_frames():
     # PUSHUP/CURL COUNTER Variables
 
     counter = 0
     stage = None
     
+# Process frame for push-up detection
+
+
     mp_drawing = mp.solutions.drawing_utils
     mp_pose = mp.solutions.pose
 
