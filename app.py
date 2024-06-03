@@ -37,7 +37,7 @@ def gen_frames():
     mp_pose = mp.solutions.pose
 
     # Video feed
-    cap = cv2.VideoCapture(-1)
+    cap = cv2.VideoCapture(0)
 
     # Settingup instance of mediapipe
     with mp_pose.Pose(min_detection_confidence=0.6, min_tracking_confidence=0.6) as pose:
