@@ -1,14 +1,25 @@
 import cv2
 import numpy as np
 import mediapipe as mp
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request,jsonify,make_response
 from cam_check import check_camera #import other cam_checker code to check for camera
 
 app = Flask(__name__)
 
+
+@app.route('/')
+def index():
+    resp=make_response(render_template('index.html'))
+    #return render_template('index.html')
+    resp.set_cookie('camera_access','requested',max_age=60*60*24)
+    return resp
+
+@app.route('/video_feed')
+def video_feed():
+    return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 # Check camera before starting the video feed
-if not check_camera():
-    print("Camera issues detected. Please check the camera connection, index, and permissions.")
+#if not check_camera():
+    #print("Camera issues detected. Please check the camera connection, index, and permissions.")
 
 def calculate_angle(a, b, c):
     a = np.array(a)
@@ -152,13 +163,7 @@ def gen_frames():
     
     cap.release()
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
-@app.route('/video_feed')
-def video_feed():
-    return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000,debug=True)
