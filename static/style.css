@@ -12,13 +12,20 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
-    margin-bottom: 1.5px;
+h1{
     font-size: 2em;
     color: #333;
     padding: 0 10px;
     box-sizing: border-box;
-}
+    width: 100%;
+    max-width: 90%;
+    word-wrap: break-word;
+    margin-bottom: 1em; /* add some space below the h2 element */
+  }
+  
+  h1 + p { /* select the p element that immediately follows the h2 element */
+    margin-top: 1em; /* add some space above the p element */
+  }
 
 div {
     display: inline-block;
