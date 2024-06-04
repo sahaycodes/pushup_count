@@ -13,10 +13,10 @@ body {
 }
 
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 1.5px;
     font-size: 2em;
     color: #333;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
 }
 
