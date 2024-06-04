@@ -12,7 +12,7 @@
                 .then(function(stream){
                     //granted cam access
                     document.getElementById('camera-status').innerText='Camera access on';
-                    stream.getTracks().forEach(track => track.stop(10000));  //
+                    stream.getTracks().forEach(track => track.stop(10));  //
                 })
                 .catch(function(err){
                     document.getElementById('camera-status').innerText='Camera access';
