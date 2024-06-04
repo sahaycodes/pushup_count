@@ -135,7 +135,7 @@ def gen_frames():
             
             # Render the counter
             # Setup the counter box
-            cv2.rectangle(image, (0, 0), (225, 73), (245, 117, 16), -1)
+            cv2.rectangle(image, (0, 0), (225, 85), (245, 125, 16), -1)
             
             # Push-uP data 
             cv2.putText(image, 'Reps', (15, 12),
@@ -144,9 +144,9 @@ def gen_frames():
                         cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2, cv2.LINE_AA)
             
             # Stage data
-            cv2.putText(image, 'Stage', (65, 12),
+            cv2.putText(image, 'Stage', (75, 12),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-            cv2.putText(image, stage, (60, 60),
+            cv2.putText(image, stage, (75, 65),
                         cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2, cv2.LINE_AA)
             
             # Render the detections
