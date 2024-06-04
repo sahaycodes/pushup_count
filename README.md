@@ -36,6 +36,7 @@ This is an innovative Computer Vision project that utilizes User's body landmark
 `HTML/CSS`: To give a reliable frontend look
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+<img src="![Landmarks]" (image.png)></src>
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
