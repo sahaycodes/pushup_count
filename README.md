@@ -35,8 +35,11 @@ This is an innovative Computer Vision project that utilizes User's body landmark
 - `JavaScrpt`: scripting language used in our project to handle camera access 
 `HTML/CSS`: To give a reliable frontend look
 
+![datapoints_mp](https://github.com/sahaycodes/pushup_count/assets/99585576/af9e8cc7-bca4-4d33-96d9-38d6d7e51fb8)
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
-<img src="![Landmarks]" (image.png)></src>
+
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
