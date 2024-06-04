@@ -62,6 +62,7 @@ pip install -r requirements.txt
 ```
 
 - Run the file `app.py`.
+  (Can select the python environment as anaconda or anything which suits you)
 ```
 python app.py 
 ```
