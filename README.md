@@ -69,6 +69,7 @@ python app.py
 ```
 https://pushup-count.onrender.com
 ```
+There might be some issues with the publicly hosted URL link , allow proper camera permissions. Otherwise test the application locally.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
