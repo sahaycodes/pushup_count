@@ -1,63 +1,70 @@
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin:0;
-    padding:0;
-    display:flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     color: #333;
-
-
+    box-sizing: border-box;
 }
-h1{
-    margin-bottom:0.065px;
-    font-size:2em;
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
     color: #333;
-    
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-div{
+div {
     display: inline-block;
-    margin-top:20px;
-    align-items:center;
-    margin-top:20px;
+    margin-top: 20px;
+    align-items: center;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    width: 100%;
+    max-width: 640px;
+    box-sizing: border-box;
 }
+
 img {
-    border-radius:10px;
+    border-radius: 10px;
     border: 2px solid #ddd;
-
+    width: 100%;
+    max-width: 640px;
+    box-sizing: border-box;
 }
 
-footer{
+footer {
     margin-top: 20px;
-    font-size:0.9em;
+    font-size: 0.9em;
     color: #777;
 }
 
-button{
-    background-color:#007bff;
-    color:white;
-    border:none;
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
     padding: 10px 20px;
     font-size: 1em;
-    border-radius:5px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
 }
 
-button:hover{
-    background-color: #fff;
+button:hover {
+    background-color: #0056b3;
 }
+
 #camera {
     width: 100%;
     max-width: 640px;
+    box-sizing: border-box;
 }
