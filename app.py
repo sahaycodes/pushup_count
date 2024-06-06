@@ -126,7 +126,7 @@ def gen_frames():
                         stage = 'down'
                     if left_elbow_angle < 30 and right_elbow_angle < 30 and left_hip_angle > 160 and right_hip_angle > 160 and stage == 'down':
                         stage = 'up'
-                        counter += 1
+                        counter += 1 #increases counter
                         print(counter)
                     
                 except Exception as e:
